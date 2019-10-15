@@ -7,7 +7,7 @@ Talk a Bit Website
 * [ ] Tickets - botão na landing page + link na navbar para site dos eventos
 * [ ] Speakers (David)
 * [ ] Program (Danny)
-* [ ] Sponsors
+* [ ] Sponsors (Mateus)
 * [ ] Location - FEUP com google maps + salas com indicações textuais
 * [ ] Organization
 
