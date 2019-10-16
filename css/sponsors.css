@@ -1,0 +1,53 @@
+/* Color pattern: https://www.schemecolor.com/gold-silver-and-bronze-color-palette.php */
+#sponsors {
+    padding: 1rem;
+}
+
+#sponsors #title {
+    margin-bottom: 1.5rem;
+}
+
+#sponsors .box {
+    margin-bottom: 8rem;
+}
+
+#sponsors .line {
+    height: 0.1rem;
+    
+}
+
+#sponsors i.fas {
+    margin-right: 0.5rem;
+}
+
+#sponsors #gold-title {
+    color: #C9B037;
+}
+
+#sponsors #gold-line {
+    background-image: linear-gradient(to right, #C9B037, rgba(0,0,0,0));
+}
+
+#sponsors #silver-title {
+    color: #B4B4B4;
+}
+
+#sponsors #silver-line {
+    background-image: linear-gradient(to right, #B4B4B4, rgba(0,0,0,0));
+}
+
+#sponsors #bronze-title {
+    color: #AD8A56;
+}
+
+#sponsors #bronze-line {
+    background-image: linear-gradient(to right, #AD8A56, rgba(0,0,0,0));
+}
+
+#sponsors #partners-title {
+    color: #224B8B;
+}
+
+#sponsors #partners-line {
+    background-image: linear-gradient(to right, #224B8B, rgba(0,0,0,0));
+}
