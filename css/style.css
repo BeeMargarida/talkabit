@@ -189,12 +189,7 @@ html,
 }
 
 #navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
-    opacity: 1;
     cursor: pointer;
-}
-
-#navbar .dropdown-menu .dropdown-item:hover{
-	background:transparent;
 }
 
 #navbar .dropdown-menu{
