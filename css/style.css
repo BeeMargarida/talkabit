@@ -250,6 +250,10 @@ html,
         top: 0;
     }
 
+    #prevVersions{
+        width: 10em;
+    }
+
     #navbarNav li {
         margin-top: 10%;
         padding-left: 10% !important;
