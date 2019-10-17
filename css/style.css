@@ -163,6 +163,10 @@ html,
 	}
 }
 
+.navbar-toggler{
+    background: rgba(14,14,14,0.4);
+}
+
 #navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
     color: white;
     font-family: 'DecimaA';
@@ -189,6 +193,7 @@ html,
 }
 
 #navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
+    opacity: 1;
     cursor: pointer;
 }
 
