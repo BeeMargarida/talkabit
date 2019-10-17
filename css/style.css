@@ -238,6 +238,27 @@ html,
         font-weight: normal;
         color: white;
     }
+
+}
+
+@media (max-width:992px) {
+    #navbarNav {
+        background-color: #0F2E51;
+        /* text-align: center; */
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #navbarNav li {
+        margin-top: 10%;
+        padding-left: 10% !important;
+        padding-right: 10% !important
+    }
+
+    #navbarNav li:last-of-type {
+        margin-bottom: 10%;
+    }
 }
 
 .conf-status p {
