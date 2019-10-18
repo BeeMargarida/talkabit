@@ -108,6 +108,10 @@ html,
     font-family: 'DecimaABold';
 }
 
+.dropdown-item:hover {
+    color: black !important;
+}
+
 @media (max-width: 992px) {
     .conf-status p {
         font-size: 2rem;
