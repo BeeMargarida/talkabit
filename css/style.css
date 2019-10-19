@@ -305,6 +305,6 @@ html,
 }
 
 .navbar-collapse.collapse.show {
-    max-height: 100vh;
+    max-height: 100%;
     overflow-y: auto;
 }
