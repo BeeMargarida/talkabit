@@ -247,8 +247,10 @@ html,
 
 @media (max-width:992px) {
     #navbar {
-        overflow: scroll;
-        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
 
     #toggle {
@@ -300,4 +302,9 @@ html,
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white; }
+}
+
+.navbar-collapse.collapse.show {
+    max-height: 100vh;
+    overflow-y: auto;
 }
