@@ -41,6 +41,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: rgba(15, 46, 81, 1) !important;
 }
   
 html,
@@ -74,14 +75,35 @@ html,
     margin-left: -2px;
 }
 
+.small-spacer{
+    height:2em;
+}
+
+.spacer{
+    height:4em;
+}
+
 .speaker-title{
     display: flex;
     align-items: flex-end;
 }
 
+.speaker-title-off{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .speaker-social{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.6em;
+}
+
+.speaker-social-close{
+    display: flex;
     align-items: center;
     width: 100%;
     padding-top: 0.6em;
@@ -121,6 +143,7 @@ html,
     font-family: 'DecimaABold';
     padding-bottom: 0.45em;
     padding-left: 0.35em;
+    padding-right: 0.35em;
 }
 
 .speaker-pic{
