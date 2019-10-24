@@ -110,6 +110,10 @@ html,
     font-family: 'DecimaABold';
 }
 
+.dropdown-item:hover {
+    color: black !important;
+}
+
 @media (max-width: 992px) {
     .conf-status p {
         font-size: 2rem;
@@ -165,6 +169,10 @@ html,
 	}
 }
 
+.navbar-toggler{
+    background: rgba(14,14,14,0.4);
+}
+
 #navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
     color: white;
     font-family: 'DecimaA';
@@ -193,10 +201,6 @@ html,
 #navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
     opacity: 1;
     cursor: pointer;
-}
-
-#navbar .dropdown-menu .dropdown-item:hover{
-	background:transparent;
 }
 
 #navbar .dropdown-menu{
@@ -240,6 +244,43 @@ html,
         font-weight: normal;
         color: white;
     }
+
+}
+
+@media (max-width:992px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #toggle {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    #navbarNav {
+        background-color: #0F2E51;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #prevVersions{
+        width: 10em;
+    }
+
+    #navbarNav li {
+        margin-top: 10%;
+        padding-left: 10% !important;
+        padding-right: 10% !important
+    }
+
+    #navbarNav li:last-of-type {
+        margin-bottom: 10%;
+    }
 }
 
 .conf-status p {
@@ -263,4 +304,9 @@ html,
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white; }
+}
+
+.navbar-collapse.collapse.show {
+    max-height: 95vh;
+    overflow-y: auto;
 }
