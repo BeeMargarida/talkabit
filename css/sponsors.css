@@ -1,53 +1,62 @@
 /* Color pattern: https://www.schemecolor.com/gold-silver-and-bronze-color-palette.php */
+body {
+  background-color: #102f50;
+  color: #e6edf1;
+}
+
 #sponsors {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+#sponsors.container {
+  text-align: left;
 }
 
 #sponsors #title {
-    margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
 }
 
 #sponsors .box {
-    margin-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 #sponsors .line {
-    height: 0.1rem;
-    
+  height: 0.1rem;
 }
 
 #sponsors i.fas {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #sponsors #gold-title {
-    color: #C9B037;
+  color: #c9b037;
 }
 
 #sponsors #gold-line {
-    background-image: linear-gradient(to right, #C9B037, rgba(0,0,0,0));
+  background-image: linear-gradient(to right, #c9b037, rgba(0, 0, 0, 0));
 }
 
 #sponsors #silver-title {
-    color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 #sponsors #silver-line {
-    background-image: linear-gradient(to right, #B4B4B4, rgba(0,0,0,0));
+  background-image: linear-gradient(to right, #b4b4b4, rgba(0, 0, 0, 0));
 }
 
 #sponsors #bronze-title {
-    color: #AD8A56;
+  color: #ad8a56;
 }
 
 #sponsors #bronze-line {
-    background-image: linear-gradient(to right, #AD8A56, rgba(0,0,0,0));
+  background-image: linear-gradient(to right, #ad8a56, rgba(0, 0, 0, 0));
 }
 
 #sponsors #partners-title {
-    color: #224B8B;
+  color: #31c0ff;
 }
 
 #sponsors #partners-line {
-    background-image: linear-gradient(to right, #224B8B, rgba(0,0,0,0));
+  background-image: linear-gradient(to right, #31c0ff, rgba(0, 0, 0, 0));
 }
