@@ -72,6 +72,7 @@ html,
     color: rgb(230, 237, 241);
     text-align: left;
     font-family: 'DecimaABold';
+    padding-right: 0.35em;
     margin-left: -2px;
 }
 
@@ -142,7 +143,6 @@ html,
     text-align: left;
     font-family: 'DecimaABold';
     padding-bottom: 0.45em;
-    padding-left: 0.35em;
     padding-right: 0.35em;
 }
 
@@ -154,6 +154,16 @@ html,
     border-style: solid;
     border-width: 5px;
     margin-top:0.9em;
+}
+
+.speaker-pic-small{
+    max-width: 15em;
+    border-radius: 50%;
+    overflow: hidden;
+    border-color: rgb(34,187,255);
+    border-style: solid;
+    border-width: 5px;
+    align-self: center;
 }
 
 .logo {
@@ -211,6 +221,10 @@ html,
         font-size: 2rem;
     }
 
+    #logo_navbar {
+        display: none;
+    }
+
     .logo {
         max-width: 70%;
     }
@@ -234,6 +248,10 @@ html,
     }
 }
 
+.speaker-image-col{
+    flex-grow: 0.2 !important;
+}
+
 @media (max-width:576px) {
     .conf-status p {
         font-size: 1.5rem;
@@ -241,6 +259,19 @@ html,
 
     .logo {
         max-width: 100%;
+    }
+
+    .speaker-image-col{
+        display: none;
+    }
+
+    .speaker-pic{
+        display: none;
+    }
+
+    .speaker-title{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -315,6 +346,10 @@ html,
         position: absolute;
         right: 10px;
         bottom: 10px;
+    }
+
+    .speaker-pic-small{
+        display: none;
     }
     
     .edition {
