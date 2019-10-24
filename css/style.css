@@ -11,6 +11,7 @@
     font-weight: normal;
     src: local('Decima'), url('fonts/Decima-Pro.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'DecimaBold';
     font-style: normal;
@@ -41,8 +42,11 @@
 
 body {
     font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
-  
+
 html,
 .fullscreen {
     display: flex;
@@ -50,7 +54,6 @@ html,
     margin: 0;
     padding: 0;
     width: 100%;
-    
 }
 
 .container {
@@ -66,13 +69,138 @@ html,
     max-width: 40%;
 }
 
+#organization {
+    height: 100%;
+}
+
+#organization.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.organization-title-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.organization-title {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Decima';
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.organization-title-container hr {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+    width: 100%;
+}
+
+.container-fluid.organization-gallery {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+}
+
+.organization-gallery {
+    height: 100%;
+}
+
+.row.organization-columns {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    z-index: 1;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding: 0!important;
+}
+
+.row.organization-columns-overlay {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    z-index: 1;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding: 0!important;
+}
+
+.organization-card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    color: white;
+    margin-bottom: 0.1%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.organization-card-text-overlay {
+    opacity: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    color: white;
+    margin-bottom: 0.1%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.organization-card-text-overlay:hover {
+    opacity: 1;
+    color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-container {
+    margin-left: 10%;
+}
+
+.member-container {
+    font-size: 2vw;
+    margin-top: 2vh;
+    margin-left: -1.5vw;
+}
+
 .landing {
     /* background-color: #0F2E51; */
-    height: 100%;
+    height: 100vh;
     min-width: 100vw;
     background-image: url("../images/feup.jpeg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-color: rgba(15, 46, 81, 0.6);
     background-blend-mode: darken
@@ -108,15 +236,16 @@ html,
     font-family: 'DecimaABold';
 }
 
-.dropdown-item:hover {
-    color: black !important;
+.h-20 {
+    height: 20%!important;
+    background-color: black;
+    justify-content: center;
 }
 
 @media (max-width: 992px) {
     .conf-status p {
         font-size: 2rem;
     }
-
     .logo {
         max-width: 70%;
     }
@@ -126,7 +255,6 @@ html,
     .conf-status p {
         font-size: 2rem;
     }
-
     .logo {
         max-width: 95%;
     }
@@ -136,7 +264,6 @@ html,
     .conf-status p {
         font-size: 1.5rem;
     }
-
     .logo {
         max-width: 100%;
     }
@@ -158,36 +285,35 @@ html,
 }
 
 @keyframes wave {
-	0%, 60%, 100% {
-		transform: initial;
-	}
-
-	30% {
-		transform: translateY(-15px);
-	}
+    0%,
+    60%,
+    100% {
+        transform: initial;
+    }
+    30% {
+        transform: translateY(-15px);
+    }
 }
 
-.navbar-toggler{
-    background: rgba(14,14,14,0.4);
-}
-
-#navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
+#navbar ul li>a,
+#navbar .dropdown-menu .dropdown-item {
     color: white;
     font-family: 'DecimaA';
     letter-spacing: .3px;
     font-size: 17px;
 }
 
-#navbar .dropdown-menu .dropdown-item{
-	text-align: center;
+#navbar .dropdown-menu .dropdown-item {
+    text-align: center;
 }
 
-#navbar .dropdown-menu{
-	min-width: 8.5rem;
+#navbar .dropdown-menu {
+    min-width: 8.5rem;
 }
 
-#navbar .nav-item .nav-link, #navbar .dropdown-menu .dropdown-item{
-	font-size:15px;
+#navbar .nav-item .nav-link,
+#navbar .dropdown-menu .dropdown-item {
+    font-size: 15px;
     border: 5px solid transparent;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -196,16 +322,21 @@ html,
     opacity: 0.8;
 }
 
-#navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
+#navbar .nav-item .nav-link:hover,
+#navbar .dropdown-menu .dropdown-item:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-#navbar .dropdown-menu{
-	background-color: transparent !important;
-	border: none;
-	border-radius:2px 2px 8px 8px;
-	padding:0;
+#navbar .dropdown-menu .dropdown-item:hover {
+    background: transparent;
+}
+
+#navbar .dropdown-menu {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 2px 2px 8px 8px;
+    padding: 0;
 }
 
 @media (min-width: 577px) {
@@ -214,7 +345,6 @@ html,
         right: 10px;
         bottom: 10px;
     }
-    
     .edition {
         width: 100%;
         font-size: 1.5rem;
@@ -230,11 +360,9 @@ html,
         right: 10px;
         bottom: 10px;
     }
-
     .logo-feup img {
         width: 150px;
     }
-
     .edition {
         width: 100%;
         font-size: 0.9rem;
@@ -242,69 +370,43 @@ html,
         font-weight: normal;
         color: white;
     }
-
-}
-
-@media (max-width:992px) {
-    #navbar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    #toggle {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-    }
-
-    #navbarNav {
-        background-color: #0F2E51;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    #prevVersions{
-        width: 10em;
-    }
-
-    #navbarNav li {
-        margin-top: 10%;
-        padding-left: 10% !important;
-        padding-right: 10% !important
-    }
-
-    #navbarNav li:last-of-type {
-        margin-bottom: 10%;
-    }
 }
 
 .conf-status p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-  
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-.navbar-collapse.collapse.show {
-    max-height: 95vh;
-    overflow-y: auto;
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
 }
