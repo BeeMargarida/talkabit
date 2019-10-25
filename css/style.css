@@ -84,7 +84,7 @@ html,
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
 }
 
 .organization-title {
@@ -96,7 +96,7 @@ html,
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    font-family: 'Decima';
+    font-family: 'DecimaLight';
     width: 100%;
     margin-top: 5%;
     margin-bottom: 0;
@@ -149,6 +149,7 @@ html,
 }
 
 .organization-card-text {
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,6 +163,7 @@ html,
 }
 
 .organization-card-text-overlay {
+    max-height: 100vh;
     opacity: 0;
     display: flex;
     align-content: center;
@@ -174,6 +176,7 @@ html,
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    overflow: hidden;
 }
 
 .organization-card-text-overlay:hover {
@@ -186,13 +189,29 @@ html,
 }
 
 .team-container {
+    overflow: scroll;
+    overflow-x: hidden;
     margin-left: 10%;
+    max-height: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
 
 .member-container {
     font-size: 2vw;
     margin-top: 2vh;
     margin-left: -1.5vw;
+}
+
+.member-image {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
 }
 
 .landing {
@@ -237,7 +256,7 @@ html,
 }
 
 .h-20 {
-    height: 20%!important;
+    height: 20em;
     background-color: black;
     justify-content: center;
 }
@@ -248,6 +267,40 @@ html,
     }
     .logo {
         max-width: 70%;
+    }
+    .h-20 {
+        height: 10em;
+        background-color: black;
+        justify-content: center;
+    }
+    .member-container {
+        font-size: 5vw;
+        margin-top: 1vh;
+        margin-left: -1.5vw;
+    }
+    .member-image {
+        height: 40px;
+        width: 40px;
+    }
+    .organization-card-text {
+        font-size: 7vw;
+    }
+    .organization-card-text-overlay {
+        max-height: 100vh;
+        height: 33.3%;
+        opacity: 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 7vw;
+        color: white;
+        margin-bottom: 0.1%;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        overflow: hidden;
     }
 }
 
