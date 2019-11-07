@@ -29,6 +29,14 @@ body {
   margin-right: 0.5rem;
 }
 
+#sponsors #main-title {
+  color: #a61420;
+}
+
+#sponsors #main-line {
+  background-image: linear-gradient(to right, #a61420, rgba(0, 0, 0, 0));
+}
+
 #sponsors #gold-title {
   color: #c9b037;
 }
@@ -59,4 +67,13 @@ body {
 
 #sponsors #partners-line {
   background-image: linear-gradient(to right, #31c0ff, rgba(0, 0, 0, 0));
+}
+
+#sponsors .row {
+  padding-top: 2em;
+}
+
+#sponsors .row .col-sm {
+  display: flex;
+  justify-content: center;
 }
