@@ -25,105 +25,70 @@
     <body>
         <div id="landing" class="landing container-fluid">
 
-            <!-- meter navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top hide" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="row collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav mx-auto navbar-first-list navbar-left">
-                        <li class="nav-item">
-                            <a class="nav-link py-0 active" href="#landing">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="#tickets">Tickets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="#speakers">Speakers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="#program">Program</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0 sponsors_link" href="#sponsors">Sponsors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="#location">Location</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav mx-auto">
-                        <!-- IMO fica melhor sem icone na pagina inicial, se nao concordarem digam -->
-                        <!-- <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="#">
-            <img height="40" src="images/logo_sem.png" />
-          </a> -->
-                    </ul>
-                    <ul class="nav navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link py-0" href="organization.html">Organization</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#organization">Organization</a>
+                </li>
+                <li class="nav-item dropdown" id="prevVersions">
+                    <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Previous Editions
             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
-                                <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://talkabit.org/2019">2019</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2018">2018</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2017">2017</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2016">2016</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2015">2015</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2014">2014</a>
+                        <a class="dropdown-item" href="http://talkabit.org/2013">2013</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
 
 
-            <div class="row h-25">
+        <div class="row h-25">
+        </div>
+
+        <!-- meter logo e frase de on waiting -->
+        <div class="row logo mx-auto">
+            <embed src="images/logo_filled.png" alt="tab-logo" class="img-fluid max-width">
+
+            <div class="row col-12 text-center mx-auto">
+                <p class="edition">
+                    8th edition of the student organized tech conference @ Porto
+                </p>
             </div>
 
-            <!-- meter logo e frase de on waiting -->
-            <div class="row logo mx-auto">
-                <embed src="images/logo_filled.png" alt="tab-logo" class="img-fluid max-width">
-
-                <div class="row col-12 text-center mx-auto">
-                    <p class="edition">
-                        8th edition of the student organized tech conference @ Porto
-                    </p>
-                </div>
-
-                <div class="row conf-status text-center mx-auto">
-                    <p>
-                        See you in a bit...
-                        <!-- <span class="dots">
+            <div class="row conf-status text-center mx-auto">
+                <p>
+                    See you in a bit...
+                    <!-- <span class="dots">
             <span class="dot">.</span>
             <span class="dot">.</span>
             <span class="dot">.</span>
           </span> -->
-                    </p>
-                </div>
+                </p>
             </div>
+        </div>
 
-            <!-- meter links das redes sociais -->
-            <div class="row text-center social">
-                <ul class="list-group list-group-horizontal mx-auto">
-                    <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/talkabitconf"><i class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+        <!-- meter links das redes sociais -->
+        <div class="row text-center social">
+            <ul class="list-group list-group-horizontal mx-auto">
+                <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/talkabitconf"><i class="fab fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fab fa-instagram"></i></a></li>
+                <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fas fa-envelope"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/talkabit/"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
 
-            <!-- meter logo da feup e redirect -->
-            <div class="logo-feup">
-                <a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class="float-right" src="2019/res/img/feup-logo.png" /></a>
-            </div>
+        <!-- meter logo da feup e redirect -->
+        <div class="logo-feup">
+            <a href="https://sigarra.up.pt/feup/pt/web_page.inicial"><img class="float-right" src="2019/res/img/feup-logo.png" /></a>
+        </div>
         </div>
 
         <script src="js/main.js"></script>
