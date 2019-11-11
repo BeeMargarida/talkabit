@@ -41,7 +41,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgba(15, 46, 81, 1) !important;
+    background-color: rgb(15, 46, 81) !important;
 }
   
 html,
@@ -123,6 +123,12 @@ html,
     color: black !important;
 }
 
+#footer .footer-logo-feup {
+    position: absolute; 
+    right: 20px; 
+    bottom: 30px;
+}
+
 @media (max-width: 992px) {
     .conf-status p {
         font-size: 2rem;
@@ -140,6 +146,13 @@ html,
 
     .logo {
         max-width: 95%;
+    }
+
+    #footer .footer-logo-feup {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /*background-color: red;*/
     }
 }
 
@@ -213,10 +226,23 @@ html,
 }
 
 #navbar .dropdown-menu{
-	background-color: transparent !important;
+	background-color: rgba(9,28,49, 0.9) !important;
 	border: none;
 	border-radius:2px 2px 8px 8px;
 	padding:0;
+}
+
+#navbar {
+    background-color: rgba(0,0,0, 0);
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+#navbar.show {
+    background-color: rgba(9,28,49, 0.9);
 }
 
 @media (min-width: 577px) {
@@ -253,7 +279,6 @@ html,
         font-weight: normal;
         color: white;
     }
-
 }
 
 @media (max-width:992px) {
@@ -271,7 +296,7 @@ html,
     }
 
     #navbarNav {
-        background-color: #0F2E51;
+        background-color: rgba(9,28,49, 0.9);
         position: absolute;
         left: 0;
         top: 0;
@@ -328,5 +353,14 @@ html,
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-color: rgb(34,187,255)
-  /*border-top: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+#footer {
+    position: relative;
+    color: rgb(230, 237, 241);
+    background-color: rgb(9,28,49);
+}
+
+#footer .footer-logo-feup img {
+    height: 50px;
 }
