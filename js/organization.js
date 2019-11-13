@@ -24,6 +24,7 @@ for (let i = 0; i < l; l--) {
             }
             // Show clicked card
             el.className = el.className.replace("-hidden", "-showing");
+            el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         } else {
             el.className = el.className.replace("-showing", "-hidden");
         }

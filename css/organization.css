@@ -11,7 +11,7 @@ body {
     margin-bottom: 4rem;
     margin-top: 4rem;
     padding-left: 5vw;
-    font-family: 'DecimaA';
+    font-family: 'DecimaABold';
     font-size: 4vw;
     color: white;
 }
@@ -143,10 +143,10 @@ body {
     font-size: 3.5vw;
     color: white;
     margin-bottom: 0.1%;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 #organization .organization-card-text-overlay-showing {
@@ -157,10 +157,10 @@ body {
     font-size: 3.5vw;
     color: BLACK;
     margin-bottom: 0.1%;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 #organization .medium-team .organization-card-text-overlay-showing {
