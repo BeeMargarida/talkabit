@@ -6,86 +6,27 @@ $(window).on(function() {
 })
 
 var els = document.getElementsByClassName('col-sm-4 organization-card-text-overlay');
-var els2 = document.getElementsByClassName('col-sm-4 big-team organization-card-text-overlay');
-var els3 = document.getElementsByClassName('col-sm-4 bugged organization-card-text-overlay');
-var els4 = document.getElementsByClassName('col-sm-4 bugged2 organization-card-text-overlay');
-var els5 = document.getElementsByClassName('col-sm-4 medium-team organization-card-text-overlay');
-var els6 = document.getElementsByClassName('col-sm-4 small-team organization-card-text-overlay');
-var els7 = document.getElementsByClassName('col-sm-4 small-team bugged3 organization-card-text-overlay');
-Array.prototype.forEach.call(els6, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 small-team bugged3 organization-card-text-overlay-hidden";
+var l = els.length;
+
+for (let i = 0; i < l; l--) {
+    console.log(els);
+    let el = els[i];
+    console.log(els[i]);
+    el.className += "-hidden";
+    console.log(el.className);
     el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 small-team bugged3 organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 small-team bugged3 organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 small-team bugged3 organization-card-text-overlay-hidden";
+        if (el.className.includes("-hidden")) {
+            // Hide showing cards (which will always be 1 at most), if there are any
+            var showingEls = document.getElementsByClassName('organization-card-text-overlay-showing');
+            if (showingEls.length > 0) {
+                let showingEl = showingEls[0];
+                showingEl.className = showingEl.className.replace("-showing", "-hidden")
+            }
+            // Show clicked card
+            el.className = el.className.replace("-hidden", "-showing");
+        } else {
+            el.className = el.className.replace("-showing", "-hidden");
+        }
     });
-    console.log("ai1");
-});
-Array.prototype.forEach.call(els6, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 small-team organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 small-team organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 small-team organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 small-team organization-card-text-overlay-hidden";
-    });
-    console.log("ai2");
-});
-Array.prototype.forEach.call(els5, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 medium-team organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 medium-team organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 medium-team organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 medium-team organization-card-text-overlay-hidden";
-    });
-    console.log("ai3");
-});
-Array.prototype.forEach.call(els, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 organization-card-text-overlay-hidden";
-    });
-    console.log("ai4");
-});
-Array.prototype.forEach.call(els2, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 big-team organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 big-team organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 big-team organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 big-team organization-card-text-overlay-hidden";
-    });
-    console.log("ai5");
-});
-Array.prototype.forEach.call(els3, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 bugged organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 bugged organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 bugged organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 bugged organization-card-text-overlay-hidden";
-    });
-    console.log("ai6");
-});
-Array.prototype.forEach.call(els4, function(el) {
-    // Do stuff here
-    el.className = "col-sm-4 bugged2 organization-card-text-overlay-hidden";
-    el.addEventListener("click", function() {
-        if (el.className == "col-sm-4 bugged2 organization-card-text-overlay-hidden")
-            el.className = "col-sm-4 bugged2 organization-card-text-overlay-showing";
-        else
-            el.className = "col-sm-4 bugged2 organization-card-text-overlay-hidden";
-    });
-    console.log("ai7");
-});
+
+}
