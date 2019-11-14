@@ -15,6 +15,7 @@ body {
 #sponsors #title {
   margin-bottom: 2rem;
   font-size: 4rem;
+  font-family: "DecimaABold";
 }
 
 #sponsors .box {
@@ -34,7 +35,13 @@ body {
 }
 
 #sponsors #main-line {
-  background-image: linear-gradient(to right, #a61420, rgba(0, 0, 0, 0));
+  background-color: #a61420;
+}
+
+#sponsors #main-sponsor-img {
+  width: 100%;
+  height: 15rem;
+  padding-top: 2rem;
 }
 
 #sponsors #gold-title {
@@ -42,7 +49,7 @@ body {
 }
 
 #sponsors #gold-line {
-  background-image: linear-gradient(to right, #c9b037, rgba(0, 0, 0, 0));
+  background-color: #c9b037;
 }
 
 #sponsors #silver-title {
@@ -50,7 +57,7 @@ body {
 }
 
 #sponsors #silver-line {
-  background-image: linear-gradient(to right, #b4b4b4, rgba(0, 0, 0, 0));
+  background-color: #b4b4b4;
 }
 
 #sponsors #bronze-title {
@@ -58,7 +65,7 @@ body {
 }
 
 #sponsors #bronze-line {
-  background-image: linear-gradient(to right, #ad8a56, rgba(0, 0, 0, 0));
+  background-color: #ad8a56;
 }
 
 #sponsors #partners-title {
@@ -66,7 +73,7 @@ body {
 }
 
 #sponsors #partners-line {
-  background-image: linear-gradient(to right, #31c0ff, rgba(0, 0, 0, 0));
+  background-color: #31c0ff;
 }
 
 #sponsors .row {
