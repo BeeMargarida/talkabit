@@ -5,7 +5,7 @@ $(window).on(function() {
     })
 })
 
-var els = document.getElementsByClassName('col-sm-4 organization-card-text-overlay');
+var els = document.getElementsByClassName('col-md-4 organization-card-text-overlay');
 var l = els.length;
 
 for (let i = 0; i < l; l--) {
@@ -24,7 +24,7 @@ for (let i = 0; i < l; l--) {
             }
             // Show clicked card
             el.className = el.className.replace("-hidden", "-showing");
-            el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            //el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         } else {
             el.className = el.className.replace("-showing", "-hidden");
         }
