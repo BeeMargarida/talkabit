@@ -9,11 +9,11 @@ var els = document.getElementsByClassName('col-md-4 organization-card-text-overl
 var l = els.length;
 
 for (let i = 0; i < l; l--) {
-    console.log(els);
+
     let el = els[i];
-    console.log(els[i]);
+
     el.className += "-hidden";
-    console.log(el.className);
+
     el.addEventListener("click", function() {
         if (el.className.includes("-hidden")) {
             // Hide showing cards (which will always be 1 at most), if there are any
