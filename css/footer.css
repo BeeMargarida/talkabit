@@ -22,6 +22,16 @@
     color: white;
 }
 
+#footer .footer-logo-feup img {
+    height: 50px;
+}
+
+#footer {
+    position: relative;
+    color: rgb(230, 237, 241);
+    background-color: rgb(9,28,49);
+}
+
 @media (max-width: 768px) {
     #footer .footer-logo-feup {
         position: static;
