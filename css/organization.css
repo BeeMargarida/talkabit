@@ -87,6 +87,7 @@ body {
     margin-right: 0!important;
     margin-left: 0!important;
     padding: 0!important;
+    justify-content: center;
 }
 
 #organization .organization-columns img {
@@ -122,6 +123,7 @@ body {
 #organization .organization-card-text-overlay {
     opacity: 0;
     display: flex;
+    flex-direction: row;
     align-content: center;
     font-size: 3.5vw;
     color: BLACK;
@@ -130,11 +132,14 @@ body {
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    max-width: 93% !important;
+    margin-bottom: 5.5%;
 }
 
 #organization .organization-card-text-overlay-hidden {
     opacity: 0;
     display: flex;
+    flex-direction: row;
     align-content: center;
     font-size: 3.5vw;
     color: white;
@@ -143,11 +148,14 @@ body {
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    max-width: 93% !important;
+    margin-bottom: 5.5%;
 }
 
 #organization .organization-card-text-overlay-showing {
     opacity: 1;
     display: flex;
+    flex-direction: row;
     align-content: center;
     font-size: 3.5vw;
     color: BLACK;
@@ -156,6 +164,8 @@ body {
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    max-width: 93% !important;
+    margin-bottom: 5.5%;
 }
 
 #organization .team-container {
@@ -170,12 +180,9 @@ body {
 }
 
 #organization .member-container img {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #organization .member-container p {
@@ -185,7 +192,7 @@ body {
 }
 
 #organization .member-container .img-fluid {
-    margin-top: 100%;
+    margin-top: 75%;
     border-radius: 50%;
     object-fit: fill;
     width: 80%;
@@ -208,17 +215,16 @@ body {
 }
 
 #organization .member-container .img-fluid.big-team {
-    margin-top: 50%;
+    margin-top: 25%;
     border-radius: 50%;
     object-fit: cover;
-    width: 50%;
 }
 
 #organization .big-container2 .member-container .img-fluid.big-team {
-    margin-top: 38%;
+    margin-top: 20%;
     border-radius: 50%;
     object-fit: cover;
-    width: 40%;
+    width: 45%;
 }
 
 #organization .big-container2 {
