@@ -10,7 +10,6 @@ body {
 #organization #title {
     margin-bottom: 4rem;
     margin-top: 4rem;
-    padding-left: 5vw;
     font-family: 'DecimaABold';
     font-size: 4vw;
     color: white;
@@ -102,9 +101,14 @@ body {
     margin: 5% 0;
 }
 
+.detail-img {
+    cursor: pointer;
+}
+
 .department-image {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .space-even {
