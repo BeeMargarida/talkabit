@@ -63,6 +63,13 @@ body {
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
+
+    .member-image {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+    
 }
 
 @media (max-width:540px) {
@@ -70,6 +77,20 @@ body {
         font-size: 8vw;
         margin-bottom: 2rem;
         margin-top: 2rem;
+    }
+
+    .member-image {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .member-image {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
     }
 }
 
@@ -79,12 +100,6 @@ body {
     font-family: 'DecimaABold';
     font-size: 1.25em;
     margin: 5% 0;
-}
-
-.member-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
 }
 
 .department-image {
