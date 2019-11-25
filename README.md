@@ -9,7 +9,7 @@ Talk a Bit Website
 * [ ] Program (Danny)
 * [ ] Sponsors (Mateus)
 * [ ] Location - FEUP com google maps + salas com indicações textuais
-* [ ] Organization (Mário Santos)
+* [x] Organization (Mário Santos)
 * [ ] Convert blueprints to svg (Mário Santos)
 
 * [ ] Login/register
