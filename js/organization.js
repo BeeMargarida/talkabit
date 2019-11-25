@@ -1,33 +1,31 @@
-$(window).on(function() {
-    $('.container').find('img').each(function() {
-        var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
-        $(this).addClass(imgClass);
-    })
-})
+function toggleVisibility(dep){
+    if(dep.includes('detail')){
+        untoggleAll()
+        let image = document.getElementById(dep.split('-')[1])
+        //mostrar imagem
+        image.style.display = 'inline'
+        //esconder detalhe
+        let detail = document.getElementById(dep)
+        detail.style.display = 'none'
+    } else {
+        untoggleAll()
+        let image = document.getElementById(dep)
+        //esconder imagem
+        image.style.display = 'none'
+        //mostrar detalhe
+        let detail = document.getElementById('detail-' + dep)
+        detail.style.display = 'inline'
+    }
+}
 
-var els = document.getElementsByClassName('col-md-4 organization-card-text-overlay');
-var l = els.length;
+function untoggleAll() {
+    let dep_imgs = document.getElementsByClassName('dep-img')
+    for(let i = 0; i < dep_imgs.length; i++){
+        dep_imgs[i].style.display = 'inline'
+    }
 
-for (let i = 0; i < l; l--) {
-
-    let el = els[i];
-
-    el.className += "-hidden";
-
-    el.addEventListener("click", function() {
-        if (el.className.includes("-hidden")) {
-            // Hide showing cards (which will always be 1 at most), if there are any
-            var showingEls = document.getElementsByClassName('organization-card-text-overlay-showing');
-            if (showingEls.length > 0) {
-                let showingEl = showingEls[0];
-                showingEl.className = showingEl.className.replace("-showing", "-hidden")
-            }
-            // Show clicked card
-            el.className = el.className.replace("-hidden", "-showing");
-            //el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        } else {
-            el.className = el.className.replace("-showing", "-hidden");
-        }
-    });
-
+    let detail_imgs = document.getElementsByClassName('detail-img')
+    for(let i = 0; i < detail_imgs.length; i++){
+        detail_imgs[i].style.display = 'none'
+    }
 }
