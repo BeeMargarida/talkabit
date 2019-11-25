@@ -34,28 +34,28 @@
 
 <body>
     <div id="landing" class="landing container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark hide" id="navbar">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle">
-                <i class="fas fa-arrow-right text-white"></i>
+                <i class="fas fa-bars text-white"></i>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav mx-auto navbar-first-list">
                     <li class="nav-item">
-                        <a class="nav-link py-0 active d-inline d-lg-block" href="#landing">Home</a>
-                        <i class="fas fa-arrow-left text-white d-inline d-lg-none float-right" data-toggle="collapse"
+                        <a class="nav-link py-0 active d-inline d-lg-block" href="../index.html">Home</a>
+                        <i class="fas fa-bars text-white d-inline d-lg-none float-right" data-toggle="collapse"
                             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation"></i>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="#about">About</a>
+                        <a class="nav-link py-0" href="../index.html#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#tickets">Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="/speakers">Speakers</a>
+                        <a class="nav-link py-0" href="./speakers.html">Speakers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-0" href="#program">Program</a>
@@ -68,7 +68,7 @@
                     </li>
                 </ul>
 
-                <ul class="nav navbar-nav mx-auto" id="logo_navbar">
+                <ul class="nav navbar-nav mx-auto d-none d-md-inline" id="logo_navbar">
                     <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="../index.html">
                         <img height="40" src="../images/logo_sem.png" />
                     </a>
@@ -76,7 +76,7 @@
 
                 <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link py-0" href="organization.html">Organization</a>
+                        <a class="nav-link py-0" href="./organization.html">Organization</a>
                     </li>
                     <li class="nav-item dropdown" id="prevVersions">
                         <a class="nav-link py-0 dropdown-toggle" id="navbarDropdown" role="button"
@@ -166,6 +166,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="../js/hide-navbar.js"></script>
 </body>
 
 </html>
