@@ -118,7 +118,7 @@ html,
 }
 
 #login-form {
-    min-width: 15em;
+    /*min-width: 15em;*/
     widows: 100%;
 }
 
