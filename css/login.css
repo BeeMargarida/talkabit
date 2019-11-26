@@ -44,28 +44,26 @@ body {
     background-color: rgb(15, 46, 81) !important;
 }
   
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100%; 
+}
+
 html,
 .fullscreen {
-    display: flex;
-    height: 100%;
     margin: 0;
     padding: 0;
     max-width: 100%;
     
 }
 
-#login-form {
-    max-width: 20em;
-    align-self: center;
-}
-
-#login-form label{
-    color: rgb(230, 237, 241) !important;
-}
-
 .title {
-    font-size: 8rem;
-    color: rgb(230, 237, 241);
+    font-size: 3rem;
+    color: rgb(9,28,49);
     text-align: left;
     font-family: 'DecimaABold';
     padding-left: 0.2em;
@@ -74,7 +72,6 @@ html,
 .container {
     margin: auto;
     width: 100%;
-    height: 100%;
     /*text-align: center;*/
 }
 
@@ -107,10 +104,82 @@ html,
     color: white;
 }
 
+.login-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card{
+    border-radius: 25px;
+    width: 50em;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login-form {
+    min-width: 15em;
+    widows: 100%;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: rgb(34,187,255) !important;;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-primary:hover {
+    background-color: rgb(27, 150, 202) !important;;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+}
+
+#email, #password {
+    background-color: rgb(230, 237, 241);
+}
+
+.login-col{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgb(230, 237, 241);
+    display: flex;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    align-items: center;
+}
+
+.login-btn-submit{
+    width: 100%;
+}
+
+.login-tab-logo{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: url("../images/feup_blurred_darken.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#login-tab-logo-img{
+    max-width: 100%;
+    padding-left: 15px;
+}
+
 #landing {
     /* background-color: #0F2E51; */
-    height: 100%;
     min-width: 100vw;
+    height: 100%;
     /*background-image: url("../images/feup.jpeg");*/
     background-repeat: no-repeat;
     background-position: center;
@@ -154,6 +223,14 @@ html,
         margin-top: 20px;
         margin-bottom: 20px;
         /*background-color: red;*/
+    }
+    
+    .login-tab-logo{
+        display: none;
+    }
+
+    .login-col{
+        border-radius: 25px;
     }
 }
 
