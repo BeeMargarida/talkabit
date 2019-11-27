@@ -5,16 +5,17 @@ body {
 }
 
 #sponsors {
-  padding: 1rem;
+  font-family: "DecimaABold";
 }
 
 #sponsors.container {
   text-align: left;
+  margin-top: 4rem;
 }
 
 #sponsors #title {
   margin-bottom: 2rem;
-  font-size: 4rem;
+  font-size: 8rem;
   font-family: "DecimaABold";
 }
 
