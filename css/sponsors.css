@@ -31,11 +31,11 @@ body {
 }
 
 #sponsors #main-title {
-  color: #a61420;
+  color: #31c0ff;
 }
 
 #sponsors #main-line {
-  background-color: #a61420;
+  background-color: #31c0ff;
 }
 
 #sponsors #main-sponsor-img {
@@ -69,11 +69,11 @@ body {
 }
 
 #sponsors #partners-title {
-  color: #31c0ff;
+  color: white;
 }
 
 #sponsors #partners-line {
-  background-color: #31c0ff;
+  background-color: white;
 }
 
 #sponsors .row {
