@@ -4,7 +4,7 @@ Talk a Bit Website
 ### Features
 * [x] About (Bruno)
 * [x] Previous editions (Danny)
-* [ ] Tickets - embedded eventbrite iframe on our site
+* [ ] Tickets - embedded eventbrite iframe on our site (Danny)
 * [x] Speakers (David)
 * [x] Program (Danny)
 * [ ] Sponsors (Mateus)
